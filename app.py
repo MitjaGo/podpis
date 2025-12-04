@@ -99,10 +99,6 @@ if st.button("Generiraj e-podpis"):
           </p>
           <p style="margin:0; font-size:16px;">
             {job_title}
-            <p style="margin:0; font-size:16px;">
-            {Adria}
-            <p style="margin:0; font-size:16px;">
-            {Adres}
           </p>
           <hr style="border:1px solid {primary_color}; margin:6px 0 10px 0;">
           <p style="margin:2px 0;">📞 {phone}</p>
@@ -112,6 +108,10 @@ if st.button("Generiraj e-podpis"):
               www.adria-ankaran.si
             </a>
           </p>
+              <p style="margin:0; font-size:16px;">
+            {Adria}
+            <p style="margin:0; font-size:16px;">
+            {Adres}
           <div style="margin-top:10px;">
             <a href="{facebook}" style="margin-right:8px;">
               <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" width="22">

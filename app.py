@@ -39,7 +39,7 @@ if full_name and len(full_name.strip().split(" ")) < 2:
 # Auto-generate email if full name is valid
 if full_name and len(full_name.strip().split(" ")) >= 2:
     first_name, last_name = full_name.strip().split(" ", 1)
-    email = st.text_input("Email", f"{first_name.lower()}.{last_name.lower()}@adria-ankaran.si")
+    email = st.text_input("Email se generira sam ko se vnese ime in priimek (V kolikor imate mail drugačen, to popravite ročno)", f"{first_name.lower()}.{last_name.lower()}@adria-ankaran.si")
 else:
     email = st.text_input("Email")
 

@@ -120,10 +120,12 @@ if st.button("Generiraj e-podpis"):
 " width="22">
             </a>
             <a href="{instagram}" style="margin-right:8px;">
-              <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" width="22">
+              <img src="https://raw.githubusercontent.com/MitjaGo/podpis/main/icons/it.png
+" width="22">
             </a>
             <a href="{youtube}">
-              <img src="https://cdn-icons-png.flaticon.com/512/733/733646.png" width="22">
+              <img src="https://raw.githubusercontent.com/MitjaGo/podpis/main/icons/yt.png
+" width="22">
             </a>
           </div>
         </td>

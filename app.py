@@ -20,8 +20,8 @@ font_size = 14
 # ==========================================================
 # TITLE
 # ==========================================================
-st.title("📧 Adria Resort – Email Signature Generator")
-st.caption("Fill in your personal data only")
+st.title("📧 Adria Resort – Email Generator")
+st.caption("Dodaj svoje osebne podatke")
 
 # ==========================================================
 # STEP 1 – PERSONAL DATA
@@ -30,7 +30,7 @@ full_name = st.text_input("Full Name (Name and Surname)")
 
 # Validate full name
 if full_name and len(full_name.strip().split(" ")) < 2:
-    st.error("Please enter both Name and Surname (example: John Smith)")
+    st.error("Dodaj Ime in Priimek (Primer: Mitja Goja)")
     st.stop()
 
 # Auto-generate email if full name is valid
@@ -42,7 +42,7 @@ else:
 
 # Job title dropdown
 job_title = st.selectbox(
-    "Job Title",
+    "Izberi naziv",
     [
         "Revenue",
         "Sales Manager",
@@ -53,9 +53,9 @@ job_title = st.selectbox(
     ]
 )
 
-phone = st.text_input("Phone", "")
+phone = st.text_input("Phone","+386")
 if phone and not re.fullmatch(r"\+?\d+", phone):
-    st.error("Phone number can only contain digits and optional leading +")
+    st.error("Dodaj telefonsko številko s +386 ")
     st.stop()
 
 if email and not re.match(r"^[\w\.-]+@adria-ankaran\.si$", email):

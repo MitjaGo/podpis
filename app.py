@@ -29,7 +29,7 @@ st.caption("Dodaj svoje osebne podatke")
 # ==========================================================
 # STEP 1 – PERSONAL DATA
 # ==========================================================
-full_name = st.text_input("Ime in Priimek (Primer: Mitja Goja")
+full_name = st.text_input("Ime in Priimek (Primer: Mitja Goja)")
 
 # Validate full name
 if full_name and len(full_name.strip().split(" ")) < 2:

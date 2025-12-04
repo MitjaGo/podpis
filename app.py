@@ -56,7 +56,7 @@ job_title = st.selectbox(
     ]
 )
 
-phone = st.text_input("Phone","+386","")
+phone = st.text_input("Phone","+386")
 if phone and len(full_name.strip().split(" ")) < 4:
     st.error("Dodaj telefonsko številko s +386)")
     st.stop()

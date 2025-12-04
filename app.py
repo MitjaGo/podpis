@@ -137,7 +137,7 @@ if st.button("Generiraj e-podpis"):
     # ==========================================================
     # LIVE PREVIEW (visual)
     # ==========================================================
-    st.subheader("✅ Signature Preview")
+    st.subheader("✅ Označi celoten e-podpis in ga kopiraj v mail podpis")
     st.markdown(signature_html, unsafe_allow_html=True)
 
 

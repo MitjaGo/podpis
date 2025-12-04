@@ -137,15 +137,38 @@ if st.button("Generiraj e-podpis"):
     # ==========================================================
     # LIVE PREVIEW (visual)
     # ==========================================================
-    st.subheader("✅ Signature Preview")
-    st.markdown(signature_html, unsafe_allow_html=True)
+ #   st.subheader("✅ Signature Preview")
+ #   st.markdown(signature_html, unsafe_allow_html=True)
 
     # ==========================================================
     # OUTLOOK COPY BOX (HTML)
     # ==========================================================
-    st.subheader("📋 Copy & Paste into Outlook")
-    st.text_area("Copy HTML below", value=signature_html, height=350)
-    st.success("Select → Copy → Paste into Outlook signature editor")
+ #   st.subheader("📋 Copy & Paste into Outlook")
+ #   st.text_area("Copy HTML below", value=signature_html, height=350)
+ #   st.success("Select → Copy → Paste into Outlook signature editor")
+
+ # ==========================================================
+# LIVE PREVIEW AND COPY TO CLIPBOARD
+# ==========================================================
+st.subheader("✅ Signature Preview")
+
+# Show visual preview
+st.markdown(signature_html, unsafe_allow_html=True)
+
+# Add a hidden div with the HTML for clipboard copying
+st.subheader("📋 Copy Signature")
+st.markdown(f"""
+<button onclick="navigator.clipboard.writeText(document.getElementById('signature-html').innerText)">
+    Copy Signature to Clipboard
+</button>
+
+<div id="signature-html" style="display:none;">
+{signature_html}
+</div>
+""", unsafe_allow_html=True)
+
+st.info("Click the button above to copy the signature. Then paste it directly into Outlook.")
+
 
 
 

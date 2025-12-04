@@ -48,11 +48,11 @@ job_title = st.selectbox(
     "Izberi naziv",
     [
         "Rezervacije / Reservations",
-        "Komercialist / Sales Manager",
-        "Front Office Manager",
-        "Marketing",
-        "Hotel Manager",
-        "Operations",
+        "Komercialist prodaje / Sales Manager",
+        "Vodja Hotela / Hotel Manager",
+        "Managing Director / Direktor",
+        "Vodja Kuhinje",
+        "Recepcija / Reception",
     ]
 )
 

@@ -141,7 +141,6 @@ if st.button("Generiraj e-podpis"):
  #   st.markdown(signature_html, unsafe_allow_html=True)
 
 
- st.info("Click the button above to copy the signature. Then paste it directly into Outlook.")
 
 
 

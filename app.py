@@ -62,11 +62,32 @@ if email and not re.match(r"^[\w\.-]+@adria-ankaran\.si$", email):
     st.error("Email must be in the format name@adria-ankaran.si")
     st.stop()
 
+# Optional Banner URL
+banner_url = st.text_input(
+    "Optional Banner Image URL (minimum width 514px)",
+    "https://scontent.flju1-1.fna.fbcdn.net/v/t39.30808-6/490598416_1250886907037931_2980757396709213237_n.jpg?stp=dst-jpg_p960x960_tt6&_nc_cat=107&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=2n69QymOR8wQ7kNvwEKiVsS&_nc_oc=Adk_rW1TmQkjLJ578L9HpykTh30fdeXhLOfbRwBGB-N-VqeC7oC6Aq70KOwXLdGNPvU&_nc_zt=23&_nc_ht=scontent.flju1-1.fna&_nc_gid=K1yl1X6bMzrQwCCL6mUTUQ&oh=00_AflJDO1YHZEDCZeaXyk-ecbMJYOmu0s9cDEdLDE2kmOtKQ&oe=693786F2"
+)
+
 # ==========================================================
 # GENERATE SIGNATURE
 # ==========================================================
 if st.button("Generate My Signature"):
 
+    # Optional banner HTML
+    banner_html = ""
+    if banner_url.strip() != "":
+        banner_html = f"""
+        <div style="margin-top:10px;">
+          <a href="{website}">
+            <img src="{banner_url}" width="514" style="border-radius:8px; max-width:100%;">
+          </a>
+          <p style="font-size:10px; color:#888; margin:2px 0 0 0;">
+            Disclaimer: This email and any attachments are confidential. Please do not share without permission.
+          </p>
+        </div>
+        """
+
+    # Main signature HTML
     signature_html = f"""
     <table style="font-family: Arial; font-size:{font_size}px; color:{text_color}; width:100%; max-width:600px; border-collapse:collapse;">
       <tr>
@@ -102,6 +123,7 @@ if st.button("Generate My Signature"):
         </td>
       </tr>
     </table>
+    {banner_html}
     """
 
     # ==========================================================
@@ -114,8 +136,9 @@ if st.button("Generate My Signature"):
     # OUTLOOK COPY BOX (HTML)
     # ==========================================================
     st.subheader("📋 Copy & Paste into Outlook")
-    st.text_area("Copy HTML below", value=signature_html, height=300)
+    st.text_area("Copy HTML below", value=signature_html, height=350)
     st.success("Select → Copy → Paste into Outlook signature editor")
+
 
 
 

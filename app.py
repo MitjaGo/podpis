@@ -64,8 +64,7 @@ if email and not re.match(r"^[\w\.-]+@adria-ankaran\.si$", email):
 
 # Optional Banner URL
 banner_url = st.text_input(
-    "Optional Banner Image URL (minimum width 514px)",
-    "https://scontent.flju1-1.fna.fbcdn.net/v/t39.30808-6/490598416_1250886907037931_2980757396709213237_n.jpg?stp=dst-jpg_p960x960_tt6&_nc_cat=107&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=2n69QymOR8wQ7kNvwEKiVsS&_nc_oc=Adk_rW1TmQkjLJ578L9HpykTh30fdeXhLOfbRwBGB-N-VqeC7oC6Aq70KOwXLdGNPvU&_nc_zt=23&_nc_ht=scontent.flju1-1.fna&_nc_gid=K1yl1X6bMzrQwCCL6mUTUQ&oh=00_AflJDO1YHZEDCZeaXyk-ecbMJYOmu0s9cDEdLDE2kmOtKQ&oe=693786F2"
+    "Optional Banner Image URL (minimum width 514px)"
 )
 
 # ==========================================================
@@ -73,7 +72,7 @@ banner_url = st.text_input(
 # ==========================================================
 if st.button("Generate My Signature"):
 
-    # Optional banner HTML
+    # Optional banner HTML (only if URL provided)
     banner_html = ""
     if banner_url.strip() != "":
         banner_html = f"""

@@ -11,9 +11,9 @@ logo_url = "https://www.adria-ankaran.si/app/uploads/2025/10/logo-Adria.jpg"
 Adria = "ADRIA Turistično podjetje d.o.o."
 Adres = "Jadranska cesta 25, SI-6280 Ankaran, Slovenija"
 
-facebook = "https://www.facebook.com/adriaankaran"
-instagram = "https://www.instagram.com/adria_ankaran"
-youtube = "https://www.youtube.com"
+facebook = "https://www.facebook.com/AdriaAnkaranResort/"
+instagram = "https://www.instagram.com/adriaankaranresort/"
+youtube = "https://www.youtube.com/@adriaankaran1577"
 website = "https://www.adria-ankaran.si"
 
 primary_color = "#1f6db5"
@@ -117,15 +117,15 @@ if st.button("Generiraj e-podpis"):
           <div style="margin-top:10px;">
             <a href="{facebook}" style="margin-right:8px;">
               <img src="https://raw.githubusercontent.com/MitjaGo/podpis/main/icons/fb.png
-" width="22">
+" width="22.5">
             </a>
             <a href="{instagram}" style="margin-right:8px;">
               <img src="https://raw.githubusercontent.com/MitjaGo/podpis/main/icons/it.png
-" width="22">
+" width="22.5">
             </a>
             <a href="{youtube}">
               <img src="https://raw.githubusercontent.com/MitjaGo/podpis/main/icons/yt.png
-" width="22">
+" width="22.5">
             </a>
           </div>
         </td>

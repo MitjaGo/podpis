@@ -69,7 +69,7 @@ if email and not re.match(r"^[\w\.-]+@adria-ankaran\.si$", email):
 
 # Optional Banner URL
 banner_url = st.text_input(
-    "Neobvezni URL pasice (minimalna širina 514px)"
+    "Neobvezni URL pasice (širina 514px višina 195px)"
 )
 
 # ==========================================================

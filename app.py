@@ -83,7 +83,7 @@ if st.button("Generiraj e-podpis"):
         banner_html = f"""
         <div style="margin-top:10px;">
           <a href="{website}">
-            <img src="{banner_url}" width="514" style="border-radius:8px; max-width:100%;">
+            <img src="{banner_url}" width="530" style="border-radius:8px; max-width:100%;">
           </a>
           <p style="font-size:10px; color:#888; margin:2px 0 0 0;">
             Disclaimer: This email and any attachments are confidential. Please do not share without permission.

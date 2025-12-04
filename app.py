@@ -56,10 +56,11 @@ job_title = st.selectbox(
     ]
 )
 
-phone = st.text_input("Phone","")
-if phone and not re.fullmatch(r"\+?\d+", phone):
-    st.error("Dodaj telefonsko številko s +386 ")
+phone = st.text_input("Phone","+386","")
+if phone and len(full_name.strip().split(" ")) < 4:
+    st.error("Dodaj telefonsko številko s +386)")
     st.stop()
+
 
 if email and not re.match(r"^[\w\.-]+@adria-ankaran\.si$", email):
     st.error("Email must be in the format name@adria-ankaran.si")

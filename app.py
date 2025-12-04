@@ -56,7 +56,7 @@ job_title = st.selectbox(
     ]
 )
 
-phone = st.text_input("Telefon","+386")
+phone = st.text_input("Telefon (Vnesi številko npr 41 454 444 s predledki)","+386")
 
 # Check if phone is empty
 if not phone.strip():

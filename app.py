@@ -53,7 +53,7 @@ job_title = st.selectbox(
     ]
 )
 
-phone = st.text_input("Phone", "041708455")
+phone = st.text_input("Phone", "")
 if phone and not re.fullmatch(r"\+?\d+", phone):
     st.error("Phone number can only contain digits and optional leading +")
     st.stop()
@@ -118,7 +118,7 @@ if st.button("Generate My Signature"):
           </div>
         </td>
         <td style="vertical-align: top; text-align: center;">
-          <img src="{logo_url}" width="120" style="border-radius:8px;">
+          <img src="{logo_url}" width="100" style="border-radius:8px;">
         </td>
       </tr>
     </table>

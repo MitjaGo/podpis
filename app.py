@@ -8,6 +8,9 @@ st.set_page_config(page_title="Adria Signature Generator", layout="centered")
 # ==========================================================
 logo_url = "https://www.adria-ankaran.si/app/uploads/2025/10/logo-Adria.jpg"
 
+Adria = "ADRIA Turistično podjetje d.o.o."
+Adres = "Jadranska cesta 25, SI-6280 Ankaran, Slovenija"
+
 facebook = "https://www.facebook.com/adriaankaran"
 instagram = "https://www.instagram.com/adria_ankaran"
 youtube = "https://www.youtube.com"
@@ -70,7 +73,7 @@ banner_url = st.text_input(
 # ==========================================================
 # GENERATE SIGNATURE
 # ==========================================================
-if st.button("Generate My Signature"):
+if st.button("Generiraj e-podpis"):
 
     # Optional banner HTML (only if URL provided)
     banner_html = ""
@@ -96,6 +99,10 @@ if st.button("Generate My Signature"):
           </p>
           <p style="margin:0; font-size:16px;">
             {job_title}
+            <p style="margin:0; font-size:16px;">
+            {Adria}
+            <p style="margin:0; font-size:16px;">
+            {Adres}
           </p>
           <hr style="border:1px solid {primary_color}; margin:6px 0 10px 0;">
           <p style="margin:2px 0;">📞 {phone}</p>

@@ -157,15 +157,15 @@ st.markdown(signature_html, unsafe_allow_html=True)
 
 # Add a hidden div with the HTML for clipboard copying
 st.subheader("📋 Copy Signature")
-st.markdown(f"""
-<button onclick="navigator.clipboard.writeText(document.getElementById('signature-html').innerText)">
-    Copy Signature to Clipboard
-</button>
+#st.markdown(f"""
+#<button onclick="navigator.clipboard.writeText(document.getElementById('signature-html').innerText)">
+#    Copy Signature to Clipboard
+#</button>
 
-<div id="signature-html" style="display:none;">
-{signature_html}
-</div>
-""", unsafe_allow_html=True)
+#<div id="signature-html" style="display:none;">
+#{signature_html}
+#</div>
+#""", unsafe_allow_html=True)
 
 st.info("Click the button above to copy the signature. Then paste it directly into Outlook.")
 

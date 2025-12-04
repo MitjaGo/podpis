@@ -116,7 +116,8 @@ if st.button("Generiraj e-podpis"):
             {Adres}
           <div style="margin-top:10px;">
             <a href="{facebook}" style="margin-right:8px;">
-              <img src="https://github.com/MitjaGo/podpis/blob/main/icons/fb.png" width="22">
+              <img src="https://raw.githubusercontent.com/MitjaGo/podpis/main/icons/fb.png
+" width="22">
             </a>
             <a href="{instagram}" style="margin-right:8px;">
               <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" width="22">

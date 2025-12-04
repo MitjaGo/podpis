@@ -6,7 +6,7 @@ st.set_page_config(page_title="Adria Signature Generator", layout="centered")
 # ==========================================================
 # COMPANY SETTINGS
 # ==========================================================
-logo_url = "https://scontent.flju1-1.fna.fbcdn.net/v/t39.30808-1/538848259_1373858921407395_3734947029332493437_n.jpg?stp=c221.221.1034.1034a_dst-jpg_s480x480_tt6"
+logo_url = "https://www.adria-ankaran.si/app/uploads/2025/10/logo-Adria.jpg"
 
 facebook = "https://www.facebook.com/adriaankaran"
 instagram = "https://www.instagram.com/adria_ankaran"

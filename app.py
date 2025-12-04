@@ -56,7 +56,7 @@ job_title = st.selectbox(
     ]
 )
 
-phone = st.text_input("Phone","+386")
+phone = st.text_input("Phone","")
 if phone and not re.fullmatch(r"\+?\d+", phone):
     st.error("Dodaj telefonsko številko s +386 ")
     st.stop()

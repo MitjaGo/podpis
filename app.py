@@ -132,7 +132,7 @@ if st.button("Generiraj e-podpis"):
       </tr>
     </table>
     <!-- Disclaimer -->
-<p style="font-size:11px; color:#888; margin:6px 0 0 0;">
+<p style="font-size:10px; color:#889; margin:6px 0 0 0;">
   * To e-poštno sporočilo vam pošiljam zdaj, saj mi to ustreza. Ne pričakujem, da se boste nanj odzvali izven svojega običajnega delovnega časa.
 </p>
     {banner_html}

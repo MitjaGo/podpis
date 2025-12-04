@@ -27,10 +27,20 @@ st.caption("Fill in your personal data only")
 # STEP 1 – PERSONAL DATA
 # ==========================================================
 full_name = st.text_input("Full Name (Name and Surname)")
+
+# Validate full name
 if full_name and len(full_name.strip().split(" ")) < 2:
     st.error("Please enter both Name and Surname (example: John Smith)")
     st.stop()
 
+# Auto-generate email if full name is valid
+if full_name and len(full_name.strip().split(" ")) >= 2:
+    first_name, last_name = full_name.strip().split(" ", 1)
+    email = st.text_input("Email", f"{first_name.lower()}.{last_name.lower()}@adria-ankaran.si")
+else:
+    email = st.text_input("Email")
+
+# Job title dropdown
 job_title = st.selectbox(
     "Job Title",
     [
@@ -48,7 +58,6 @@ if phone and not re.fullmatch(r"\+?\d+", phone):
     st.error("Phone number can only contain digits and optional leading +")
     st.stop()
 
-email = st.text_input("Email")
 if email and not re.match(r"^[\w\.-]+@adria-ankaran\.si$", email):
     st.error("Email must be in the format name@adria-ankaran.si")
     st.stop()

@@ -121,7 +121,7 @@ if st.button("Generiraj e-podpis"):
             </a>
             <a href="{instagram}" style="margin-right:8px;">
               <img src="https://raw.githubusercontent.com/MitjaGo/podpis/main/icons/it.png
-" width="22.5">
+" width="22">
             </a>
             <a href="{youtube}">
               <img src="https://raw.githubusercontent.com/MitjaGo/podpis/main/icons/yt.png

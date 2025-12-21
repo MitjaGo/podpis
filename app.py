@@ -53,11 +53,11 @@ job_title_option = st.selectbox(
         "Managing Director / Direktor",
         "Vodja Kuhinje",
         "Recepcija / Reception",
-        "Izberi lastni naziv",
+        "Izberi lastni naziv delovnega mesta style="color:#000000; text-decoration:none;",
     ]
 )
 
-if job_title_option == "Izberi lastni naziv":
+if job_title_option == "Izberi lastni naziv delovnega mesta":
     job_title = st.text_input("Vnesi naziv delovnega mesta")
 else:
     job_title = job_title_option

@@ -85,7 +85,12 @@ if st.button("Generiraj e-podpis"):
           </p>
           <hr style="border:1px solid {primary_color}; margin:6px 0 10px 0;">
           <p style="margin:2px 0;">T.: {phone}</p>
-          <p style="margin:2px 0;">E.: {email}</p>
+          #<p style="margin:2px 0;">E.: {email}</p>
+          <p style="margin:2px 0;">
+          E.: <a href="mailto:{email}" style="color:#1f6db5; text-decoration:none;">
+          {email}
+          </a>
+          </p> 
           <p style="margin:6px 0;">
             <a href="{website}" style="color:{primary_color}; text-decoration:none;">
             www.adria-ankaran.si

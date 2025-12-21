@@ -67,11 +67,6 @@ if email and not re.match(r"^[\w\.-]+@adria-ankaran\.si$", email):
     st.error("Email must be in the format name@adria-ankaran.si")
     st.stop()
 
-# Optional Banner URL
-banner_url = st.text_input(
-    "Neobvezni URL pasice (širina 514px višina 195px)"
-)
-
 # ==========================================================
 # GENERATE SIGNATURE
 # ==========================================================

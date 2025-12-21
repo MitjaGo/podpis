@@ -44,7 +44,7 @@ else:
     email = st.text_input("Email")
 
 # Job title dropdown
-job_title = st.selectbox(
+job_title_option = st.selectbox(
     "Izberi naziv",
     [
         "Rezervacije / Reservations",

@@ -53,7 +53,7 @@ job_title_option = st.selectbox(
         "Managing Director / Direktor",
         "Vodja Kuhinje",
         "Recepcija / Reception",
-        "Izberi lastni naziv delovnega mesta",
+        "<b>Izberi lastni naziv delovnega mesta</b>",
     ]
 )
 

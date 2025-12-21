@@ -86,7 +86,7 @@ if st.button("Generiraj e-podpis"):
           <hr style="border:1px solid {primary_color}; margin:6px 0 10px 0;">
           <p style="margin:2px 0;">T.: {phone}</p>
           <p style="margin:2px 0;">
-          E.: <a href="mailto:{email}" style="color:#1f6db5; text-decoration:none;">
+          E.: <a href="mailto:{email}" style="color:#000000; text-decoration:none;">
           {email}
           </a>
           </p> 

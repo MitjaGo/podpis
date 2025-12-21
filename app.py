@@ -77,18 +77,6 @@ banner_url = st.text_input(
 # ==========================================================
 if st.button("Generiraj e-podpis"):
 
-    banner_html = ""
-if banner_url.strip() != "":
-    banner_html = f"""
-    <div style="margin-top:10px;">
-      <a href="{website}">
-        <img src="{banner_url}" alt="Banner"
-             width="514"
-             style="display:block; border-radius:8px; max-width:100%; height:auto;">
-      </a>
-    </div>
-    """
-
     # Main signature HTML
     signature_html = f"""
     <table style="font-family: Arial; font-size:{font_size}px; color:{text_color}; width:100%; max-width:600px; border-collapse:collapse;">

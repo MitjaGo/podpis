@@ -120,8 +120,6 @@ if st.button("Generiraj e-podpis"):
   * To e-poštno sporočilo vam pošiljam zdaj, saj mi to ustreza. 
   Ne pričakujem, da se boste nanj odzvali izven svojega običajnega delovnega časa.
 </div>
-    {banner_html}
-    """
 
     # ==========================================================
     # LIVE PREVIEW (visual)
